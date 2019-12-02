@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <title>All about Hazel</title>
 
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style1.css">
 
 </head>
 
 <body>
 <!--patterned background-->
 <div id="bg">
-        <img id="bgimg" src="./assets/images/triangle-mosaic.png";>
+
     
 
   <!--header logo and button links-->  
@@ -26,14 +26,15 @@
   
        <!--button links to other pages on site-->
       <div id="headerbuttons">
-          <div id="contactbtn"><a href="contact.html">Contact</a></div>
+          <button id="contactbtn"><a href="contact.html">Contact</a></button>
           <div id="line1"></div>
-          <div id="portfoliobtn"><a href="portfolio.html">Portfolio</a></div>
+          <button id="portfoliobtn"><a href="portfolio.html">Portfolio</a></button>
           <div id="line2"></div>
-          <div id="aboutbtn"><a href="index.html">About</a></div>
+          <button id="aboutbtn"><a href="index.html">About</a></button>
           
       </div>
-          </div>
+            <div id="headerline"></div>
+        </div>
     </header>
 
   <!--main portion of content-->
@@ -49,11 +50,22 @@
     <!--where user enters their info-->
     <section id="contentbody">
         <!--name of user-->
-        <div>Name</div>
+        <div >
+
+            <textarea id="yourname" role="textbox">Your name here</textarea>
+        </div>
+        <br>
         <!-- email of user-->
-        <div>Email</div>
+        <div>
+            <textarea id="youremail" role="textbox">Enter your email</textarea>
+        </div>
+        <br>
         <!--the message to host-->
-        <div>Message</div>
+        <div>
+            <textarea id="yourmsg" role="textbox">Send a message</textarea>
+        </div>
+
+        <button id="submit">Submit</button>
 
      
     </section>
@@ -61,9 +73,10 @@
 
   </div>
 
-  <!--footer-->
-  <footer>Copyright</footer>
+
 </div>
+  <!--footer-->
+  <footer>Copyright©</footer>
 </body>
 
 </html>

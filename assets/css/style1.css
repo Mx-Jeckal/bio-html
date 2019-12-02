@@ -1,38 +1,49 @@
-/*header: logo and links */
-#header {
+body,
+html {
+    width: 110%;
+    height: 110%;
+    margin:0;
+}
+header {
     position: fixed;
     top:0;
     background: #ffffff;
     width: 100%;
     height: 110px;
     border-bottom:2px #dddddd;
-    z-index: 1;
-    display: block;
-    overflow: inherit;
+    left: 0px;
+    position: fixed;
+    z-index: 2;
 }
-/*patterned background for entire site*/
+#header {
+    width: 960px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px #dddddd;
+    position: relative;
+}
 
-#bgimg {
-    width: 100%;
-    height:1200px;
+
+#bg {
+    width: 110%;
+    min-height: calc( 100vh - 70px);
+    height: 110%;
     background-image: url('file://C:users/mxjec/bootcamp/bio-html/assets/images/mosaic.png');
     background-size: 25%;
     background-repeat: repeat;
-    position: relative;
+    padding-bottom: 300px;
+    float: left;
+
+
+
 }
-#bg {
-    z-index: -1;
-    width: 100%;
-    overflow: hidden;
-}
-/*top left logo*/
 #logo {
     background: #5aa8a4;
     width: 150px;
     position: fixed;
     height: 100px;
     top: 10px;
-    left: 15%;
     color: #ffffff;
     text-align: center; 
     font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -45,15 +56,6 @@
     left: 3.5%;
 
 }
-#headerline {
-    width: 100%;
-    height: 2px;
-    position: fixed;
-    top: 110px;
-    z-index: 2;
-    background: #dddddd;
-
-}
 /* button links on right side of page*/
 #headerbuttons {
     width: 200px;
@@ -61,22 +63,24 @@
     top: 5%;
     left: 75%;
     display: inline;
-
 }
 #contactbtn {
     position: absolute;
     top:30px;
     left:80%;
+    border:0;
 }
 #portfoliobtn {
     position: absolute;
     top:30px;
     left:38%;
+    border: 0;
 }
 #aboutbtn {
     position: absolute;
     top: 30px;
     left: 0%;
+    border: 0;
 }
 #contactbtn,
 #portfoliobtn,
@@ -84,82 +88,37 @@
     background:  #ffffff;
     color: #dddddd;
     width: 33.3%;
-
 }
 #line2 {
     width: 2px;
-    height: 24px;
-    background: #dddddd;
-    z-index: 2;
-    border-radius: 10px;
-    position: absolute;
-    top:30px;
-    left:72%;
-}
-#line1 {
-    width: 2px;
-    height: 24px;
+    height: 20px;
     background: #dddddd;
     z-index: 2;
     border-radius: 10px;
     position: absolute;
     top: 30px;
-    left: 30%;
+    left: 75%;
 }
-
-
-/*******************************
-******************************************
-/*body of page*/
-
-#allcontent {
-    width: 960px;
-    position: absolute;
-    /*top: 20%;
-    left:18%;*/
-    background: #ffffff;
-    display: block;
-    border: 2px #dddddd;
-    min-height: 100%;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-
-
-}
-
-#contenthead {
-    width: 90%;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    color: #4aaaa5;
-    position: relative;
-    left: 4%;
-
-}
-
-p{
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 25px;
-    margin: 10px;
-
-}
-#thegirl {
-    width: 150px;
-    float: left;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-#line {
-    width:95%;
+#line1 {
+    width: 2px;
+    height: 20px;
     background: #dddddd;
-    height: 3px;
-    position: relative;
-    top: 12%;
-    left: 4%;
+    z-index: 2;
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    left: 34%;
 }
+#headerline {
+    width: 100%;
+    height: 3px;
+    position: fixed;
+    top: 110px;
+    z-index: 2;
+    background: #dddddd;
+    left: 0px;
 
-
+}
 
 /*contact page*/
 
@@ -190,8 +149,19 @@ p{
     left: 4%;
     top:58%;
     border-radius: 10px;
+    font-size: auto;
 }
-    /* portfolio page*/
+#submit {
+    background: #4aaaa5;
+    color: #ffffff;
+    width: 70px;
+    height: 40px;
+    position: relative;
+    left:5%;
+    border: 0;
+    border-radius: 10px;
+}
+/*portfolio page*/
 #project1 {
     width: 300px;
     height: 300px;
@@ -225,7 +195,7 @@ p{
 #imgtxt3 {
     width: 300px;
     height: 50px;
-    background: #5aa8a4;
+    background: #4aaaa5;
     border-radius: 10px;
     float: left;
     position: relative;
@@ -234,15 +204,55 @@ p{
     text-align: center;
     color: #ffffff
 }
+
+#allcontent {
+    width: 960px;
+    background: #ffffff;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    border: 2px solid #dddddd;
+}
+#contenthead {
+    width: 90%;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+#line {
+    width:95%;
+    background: #dddddd;
+    height: 3px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+p{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 25px;
+    margin: 10px;
+
+}
+#thegirl {
+    width: 150px;
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+}
+
 /*footer area*/
 footer {
-    width: 100%;
+    width: 110%;
     height: 50px;
     background: #666666;
     border-top: 8px solid #4aaaa5;
-    position: relative;
-    bottom: 0px;
+    margin-top: -58px;
+    float: left;
     text-align: center;
-    
-
 }
+
