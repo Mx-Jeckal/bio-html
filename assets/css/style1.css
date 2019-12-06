@@ -1,8 +1,8 @@
-body,
+/*body,*/
 html {
-    width: 110%;
-    height: 110%;
-    margin:0;
+    width: 100%;
+    height: 100%;
+    margin:0;  
 }
 header {
     position: fixed;
@@ -23,17 +23,22 @@ header {
     border: 2px #dddddd;
     position: relative;
 }
+.flexbox {
+    flex-grow: 0;
+
+}
 
 
 #bg {
-    width: 110%;
-    min-height: calc( 100vh - 70px);
-    height: 110%;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     background-image: url('file://C:users/mxjec/bootcamp/bio-html/assets/images/mosaic.png');
     background-size: 25%;
     background-repeat: repeat;
     padding-bottom: 300px;
-    float: left;
+    /* float: left; */
 
 
 
@@ -97,7 +102,7 @@ header {
     border-radius: 10px;
     position: absolute;
     top: 30px;
-    left: 75%;
+    left: 73%;
 }
 #line1 {
     width: 2px;
@@ -107,7 +112,7 @@ header {
     border-radius: 10px;
     position: absolute;
     top: 30px;
-    left: 34%;
+    left: 28%;
 }
 #headerline {
     width: 100%;
@@ -215,11 +220,13 @@ header {
     padding: 20px;
     padding-bottom: 50px;
     border: 2px solid #dddddd;
+    flex-grow: 1;
 }
 #contenthead {
     width: 90%;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: #4aaaa5;
+    font-size: 40px;
     margin-right: auto;
     margin-left: auto;
 
@@ -251,8 +258,8 @@ footer {
     height: 50px;
     background: #666666;
     border-top: 8px solid #4aaaa5;
-    margin-top: -58px;
-    float: left;
+    position: fixed;
+    bottom: 0;
     text-align: center;
 }
 
